@@ -9,17 +9,17 @@
   <title>Lumanex Network - Block Explorer</title>
   
   <!-- vendor css -->
-  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet">
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="lib/Ionicons/css/ionicons.css" rel="stylesheet">
-  <link href="lib/chartist/css/chartist.css" rel="stylesheet">
-  <link href="lib/select2/css/select2.min.css" rel="stylesheet">
-  <link href="lib/datatables/css/jquery.dataTables.css" rel="stylesheet">
+  <link href="./lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./lib/Ionicons/css/ionicons.css" rel="stylesheet">
+  <link href="./lib/chartist/css/chartist.css" rel="stylesheet">
+  <link href="./lib/select2/css/select2.min.css" rel="stylesheet">
+  <link href="./lib/datatables/css/jquery.dataTables.css" rel="stylesheet">
 
   <!-- Slim CSS -->
-  <link rel="stylesheet" href="css/themes/slim.css">
-  <link rel="stylesheet" href="css/themes/slim.one.css">
-  <link rel="stylesheet" href="css/themes/loading-indicator.css">
+  <link rel="stylesheet" href="./css/themes/slim.css">
+  <link rel="stylesheet" href="./css/themes/slim.one.css">
+  <link rel="stylesheet" href="./css/themes/loading-indicator.css">
 
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://conceal.network/cdn/leaflet/css/leaflet.css">
@@ -29,18 +29,18 @@
 
   <!-- script files -->
 
-  <script src="lib/jquery/js/jquery.js"></script>
-  <script src="lib/popper.js/js/popper.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.js"></script>
-  <script src="lib/jquery.cookie/js/jquery.cookie.js"></script>
-  <script src="lib/jquery.timeago/js/jquery.timeago.js"></script>
-  <script src="lib/select2/js/select2.full.min.js"></script>
-  <script src="lib/echarts/js/echarts.min.js"></script>
-  <script src="lib/moment/js/moment.js"></script>
-  <script src="lib/chart.js/js/Chart.js"></script>
-  <script src="lib/chartist/js/chartist.js"></script>
-  <script src="lib/datatables/js/jquery.dataTables.js"></script>
-  <script src="lib/jquery.sparkline.bower/js/jquery.sparkline.min.js"></script>
+  <script src="./lib/jquery/js/jquery.js"></script>
+  <script src="./lib/popper.js/js/popper.js"></script>
+  <script src="./lib/bootstrap/js/bootstrap.js"></script>
+  <script src="./lib/jquery.cookie/js/jquery.cookie.js"></script>
+  <script src="./lib/jquery.timeago/js/jquery.timeago.js"></script>
+  <script src="./lib/select2/js/select2.full.min.js"></script>
+  <script src="./lib/echarts/js/echarts.min.js"></script>
+  <script src="./lib/moment/js/moment.js"></script>
+  <script src="./lib/chart.js/js/Chart.js"></script>
+  <script src="./lib/chartist/js/chartist.js"></script>
+  <script src="./lib/datatables/js/jquery.dataTables.js"></script>
+  <script src="./lib/jquery.sparkline.bower/js/jquery.sparkline.min.js"></script>
 
   <!-- Leaflet javascript -->
   <script src="https://conceal.network/cdn/leaflet/js/leaflet.js"></script>
@@ -54,14 +54,14 @@
  	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
  	<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
-  <script src="js/loading-indicator.min.js"></script>
-  <script src="js/ResizeSensor.js"></script>
-  <script src="js/palette.js"></script>
-  <script src="js/slim.js"></script>
+  
+  <script src="./js/loading-indicator.min.js"></script>
+  <script src="./js/ResizeSensor.js"></script>
+  <script src="./js/palette.js"></script>
+  <script src="./js/slim.js"></script>
   <script src="./countries.js"></script>
   <script src="./config.js"></script>
-  <script src="js/main.js"></script>
+  <script src="./js/main.js"></script>
 </head>
 
 <body>
@@ -322,7 +322,7 @@
 
     // make sure index.html is in the URL for the explorer
     if (window.location.href.indexOf("index.html") == -1) {
-      window.location.href = "/index.html";
+      window.location.href = "index.html";
     } else if (GetURLParameter("hash")) {
       searchByHashOrHeight(GetURLParameter("hash").trim());
     }
